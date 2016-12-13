@@ -1,5 +1,13 @@
 use Time::HiRes;
 
+# check exist command
+$result = system("banner is_exsits >& /dev/null");
+if($result != 0){
+    print "banner command not found\n";
+    print "Please install banner becouse surely fun\n";
+    exit -1;
+}
+
 $name = "mute100";
 $color = 0;
 
